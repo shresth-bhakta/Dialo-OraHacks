@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dialo</title>
+  <link rel="stylesheet" href="/static/homestyle.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="/static/newdialo.png" alt="Dialo Logo" />
+      <!-- <h1>Dialo</h1> -->
+    </div>
+    <nav>
+      <a href="#report-issues" id="report-issues">Report Issues</a>
+      <a href="#contact-details" id="contact-link">Contact Details</a>
+      <a href="#" id="info-tab">Info</a>
+
+      <div class="dark-mode-switch">
+        <button id="toggle-dark" class="dark-mode-toggle">🌙</button>
+      </div>      
+    </nav>
+  </header>
+
+  <main>
+    <section class="cards-section">
+      <!-- BOT 1 -->
+<div class="card fade-in" id="bot1" onclick="location.href='/ai-marketing-bot'">
+    <div class="card-background" style="background-image: url('/static/bot1.jpg');">
+      <div class="card-content">
+        <h2>AI Marketing Agent</h2>
+        <div class="card-info">
+          Boost your marketing campaigns with AI-driven insights and call automation.
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- BOT 2 -->
+  <div class="card fade-in" id="bot2" onclick="location.href='/ai-customercare-bot'">
+    <div class="card-background" style="background-image: url('/static/bot1.png');">
+      <div class="card-content">
+        <h2>AI Customer Support</h2>
+        <div class="card-info">
+          Handles support calls, answers queries, and improves customer satisfaction.
+        </div>
+      </div>
+    </div>
+  </div>
+  
+    </section>
+
+    <section class="features-contact-section fade-in">
+        <section class="features-contact-section fade-in">
+            <div class="features-column">
+                <h2>Special Features</h2>
+                <ul>
+                  <li>🤖 Reduces Human Intervention </li>
+                  <li>💰 Reduces Human Cost </li>
+                  <li>🧠 AI-Powered Response Generation</li>
+                  <li>⚡ Low Latency Communication</li>
+                </ul>
+              </div>
+          
+            <div class="video-column">
+              <iframe width="100%" height="315" src="https://www.youtube.com/embed/example" frameborder="0" allowfullscreen></iframe>
+            </div>
+          
+            
+<button id="toggle-form-btn" class="show-form-btn">📩 Open Message Form</button>
+
+
+
+          </section>
+          
+
+  
+
+  
+</section>
+
+
+<!-- Info Modal -->
+<div class="info-modal" id="info-modal">
+    <div class="info-content">
+      <span class="close-btn" id="close-info">&times;</span>
+      <h2>About This Project</h2>
+      <p>
+        This platform showcases two powerful AI bots:
+        <ul>
+          <li><strong>AI Marketing Agent Bot:</strong> Handles marketing calls and campaigns.</li>
+          <li><strong>AI Customer Support Bot:</strong> Manages inbound calls and enhances customer service.</li>
+        </ul>
+        These calls are fully automated, no manual intervention needed.
+      </p>
+    </div>
+  </div>
+  
+
+  <footer id="contact-details">
+    <h2 style="color: #ffffff;">TEAM DIALO</h2>
+    <ul style="list-style: none; padding: 0;">
+        <li style="margin: 10px 0;">
+            <strong style="color: #ffffff;">Abhay Kumar:</strong> 
+            <a href="mailto:abhay.g.kumar@oracle.com" style="color: #1E90FF;">abhay.g.kumar@oracle.com</a>
+        </li>
+        <li style="margin: 10px 0;">
+            <strong style="color: #ffffff;">Shresth Bhakta:</strong> 
+            <a href="mailto:shresth.bhakta@oracle.com" style="color: #1E90FF;">shresth.bhakta@oracle.com</a>
+        </li>
+        <li style="margin: 10px 0;">
+            <strong style="color: #ffffff;">Rakshith Jain:</strong> 
+            <a href="mailto:rakshith.jain@oracle.com" style="color: #1E90FF;">rakshith.jain@oracle.com</a>
+        </li>
+        <li style="margin: 10px 0;">
+            <strong style="color: #ffffff;">Gaurav Kumawat:</strong> 
+            <a href="mailto:gaurav.kumawat@oracle.com" style="color: #1E90FF;">gaurav.kumawat@oracle.com</a>
+        </li>
+    </ul>
+
+    <hr style="margin: 30px 0; opacity: 0.2;" />
+
+    <p style="font-size: 14px; color: #ccc;">
+        &copy; 2025 Dialo. Made with love ❤️ by the Dialo Team.
+    </p>
+</footer>
+
+
+
+
+
+  <!-- Floating Action Button (FAB) -->
+  <button id="message-fab" class="message-fab">✉️</button>
+
+  <!-- Message Modal -->
+  <div id="message-modal" class="message-modal">
+      <div class="message-modal-content">
+          <span id="close-message" class="close-btn">✖️</span>
+          <h2>Send a Message</h2>
+          <form id="contact-form-floating">
+              <input type="text" name="name" placeholder="Your Name" required>
+              <input type = "email" name = "email" placeholder="Your Email " required>
+              <textarea name="message" placeholder="Your Message" required></textarea>
+              
+              <button type="submit">Send</button>
+          </form>
+      </div>
+  </div>
+
+  <script src="/static/homescript.js" defer></script>
+  
+ 
+
+
+</body>
+</html>
+
+
+
+
+
+  
+
+
